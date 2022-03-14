@@ -1,0 +1,1036 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ /*MEDIAQUERIES HOME*/
+
+@media only screen and (min-width:600px){
+    .home{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 2000px;
+    }
+
+    .intro{
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        width: 450px;
+        height: 200px;
+        text-align: center;
+        margin-left:150px;
+        transition: heigth 25, width 15;
+    
+    }
+     .intro:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 250px;
+         width: 500px;
+     }
+    
+
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+    }
+    iframe{
+        width: 100%;
+        height: 90%;
+        align-items: center;
+    }
+
+    .horariosPadre{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width:300px;
+        height: 200px;
+        margin-left:250px;
+        padding-right:30px;
+        padding-top:10px;
+        transition: heigth 25, width 15;
+    }
+     .horariosPadre:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 250px;
+         width: 350px;
+    }
+    .horarios{
+        list-style: none;
+        text-align: center;
+    }
+
+    .ubicacion{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    & img{
+        width: 60%;
+        height: 200px;
+        padding-bottom: 10px;
+    }  
+    }
+}
+@media only screen and (min-width:768px){
+    .home{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: auto;
+        height: 3000px;
+        background-color: rgb(229, 138, 203);
+        font-family: 'Quicksand', sans-serif;
+        background-image: linear-gradient(to bottom, white, pink); 
+    }
+
+    .intro{
+        box-shadow: 0 0 10px black;
+        color: black;
+        border-radius: 20px;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        width: 450px;
+        height: 200px;
+        text-align: center;
+        margin-left:300px;
+        transition: heigth 25, width 15;
+    
+    }
+     .intro:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 250px;
+         width: 500px;
+     }
+    
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    iframe{
+        width: 80%;
+        height: 100%;
+    }
+
+    .horariosPadre{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width:300px;
+        height: 200px;
+        margin-left:360px;
+        padding-right:30px;
+        padding-top:10px;
+        transition: heigth 25, width 15;
+    }
+     .horariosPadre:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 250px;
+         width: 350px;
+    }
+    .horarios{
+        list-style: none;
+        text-align: center;
+    }
+
+    .ubicacion{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        height: 600px;
+    }
+    .ubicacion img{
+        margin-top:10px ;
+        width: 50%;
+        height: 300px;
+    }
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+@media only screen and (min-width:992px){
+    .home{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: auto;
+        height: 3000px;
+        background-color: rgb(229, 138, 203);
+        font-family: 'Quicksand', sans-serif;
+        background-image: linear-gradient(to bottom, white, pink); 
+    }
+
+    .intro{
+        box-shadow: 0 0 10px black;
+        color: black;
+        border-radius: 20px;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        width: 450px;
+        height: 200px;
+        text-align: center;
+        margin-left:300px;
+        transition: heigth 25, width 15;
+    
+    }
+     .intro:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 250px;
+         width: 500px;
+     }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        width: 992px;
+        height: 1000px;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    iframe{
+        width: 80%;
+        height: 100%;
+    }
+
+    .horariosPadre{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width:300px;
+        height: 200px;
+        margin-left:360px;
+        padding-right:30px;
+        padding-top:10px;
+        transition: heigth 25, width 15;
+    }
+     .horariosPadre:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 250px;
+         width: 350px;
+    }
+    .horarios{
+        list-style: none;
+        text-align: center;
+    }
+
+    .ubicacion{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        height: 600px;
+    }
+    .ubicacion img{
+        margin-top:10px ;
+        width: 50%;
+        height: 300px;
+    }
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+@media only screen and (min-width:1024px){
+    .home{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 25% 25%;
+        grid-template-areas: "intro video"
+                             "horarios horarios"
+                             "ubicacion ubicacion";
+        column-gap: 20px;
+        row-gap: 20px;
+        width: 100%;
+        height: 3000px;
+        background-color: rgb(229, 138, 203);
+        font-family: 'Quicksand', sans-serif;
+        background-image: linear-gradient(to bottom, white, pink); 
+        align-content: center;
+       
+    }
+
+    .intro{
+        grid-area:intro;
+        margin-right:100px;
+        box-shadow: 0 0 10px black;
+        color: black;
+        border-radius: 20px;
+        width: 50%;
+        height: 300px;
+        text-align: center;
+        margin-top:400px;
+    }
+
+     .intro:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 350px;
+         width: 500px;
+     }
+
+
+    .video{
+        grid-area: video;
+        width: 95%;
+        height: 480px;
+        margin-top: 30%;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    .horariosPadre{
+        grid-area: horarios;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width:500px;
+        height: 300px;
+        margin-left:700px;
+        padding-right:30px;
+        transition: heigth 25, width 15;
+        font-size: 25px;
+    }
+    .horariosPadre:hover{
+         transition-duration: 1s;
+         background-color: black;
+         color:white;
+         height: 400px;
+         width: 600px;
+         font-size: 35px;
+    }
+    .ubicacion{
+        grid-area: ubicacion;
+        width: 100%;
+        height: 600px;
+    }
+    .ubicacion img{
+        width: 50%;
+        height: 300px;
+    }
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+
+/*MEDIAQUERIES CURSOS*/
+@media only screen and (max-width:480px){
+    .mainCursos{
+            width: 100%;
+            height: 4500px;
+            background-color: rgb(229, 138, 203);
+            font-family: 'Quicksand', sans-serif;
+            padding-top: 20px;
+            background-image: linear-gradient(to bottom, white, pink);
+    }
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+@media only screen and (min-width:480px){
+
+    .mainCursos{
+        width: 100%;
+        height: 4500px;
+        background-color: rgb(229, 138, 203);
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        background-image: linear-gradient(to bottom, white, pink);
+}
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;   
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+    }
+}
+@media only screen and (min-width:768px){
+    .mainCursos{
+        width: 100%;
+        height: 4500px;
+        background-color: rgb(229, 138, 203);
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        background-image: linear-gradient(to bottom, white, pink);
+}
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;   
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .mainCursos{
+        width: 100%;
+        height: 1800px;
+        background-color: rgb(229, 138, 203);
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        background-image: linear-gradient(to bottom, white, pink);
+    }
+    .card{
+        margin-top:50%;
+        margin-left:50px;
+    }
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;   
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+    }
+}
+
+/*MEDIAQUERIES INGRESAR*/
+@media only screen and (max-width:480px){
+    .log{
+        background-image: linear-gradient(to bottom, white, pink); 
+        font-family: 'Quicksand', sans-serif;
+        width:100%;
+        height: 1500px;
+    }
+    #form{
+        margin-top:  50px;
+        padding-top: 50px;
+    }
+
+}
+@media only screen and (min-width:480px){
+    .log{
+        background-image: linear-gradient(to bottom, white, pink); 
+        font-family: 'Quicksand', sans-serif;
+        width:100%;
+        height: 1500px;
+    }
+    #form{
+        margin-top:  150px;
+        padding-top: 100px;
+    }
+}
+@media only screen and (min-width:768px){
+    .log{
+        
+        background-image: linear-gradient(to bottom, white, pink); 
+        font-family: 'Quicksand', sans-serif;
+        width:100%;
+        height: 1500px;
+    }
+    #form{
+        margin-top:  150px;
+        padding-top: 100px;
+    }
+    #row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width:992px){
+    .log{
+        
+        background-image: linear-gradient(to bottom, white, pink); 
+        font-family: 'Quicksand', sans-serif;
+        width:100%;
+        height: 1500px;
+    }
+    #form{
+        margin-top:  250px;
+        padding-top: 100px;
+    }
+    #row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width:1024px){
+    .log{
+        
+        background-image: linear-gradient(to bottom, white, pink); 
+        font-family: 'Quicksand', sans-serif;
+        width:100%;
+        height: 1500px;
+    }
+    #form{
+        margin-top:  300px;
+        padding-top: 100px;
+    }
+    #row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+/*MEDIAQUERIES TIENDA*/
+@media only screen and (max-width:480px){
+    .mainTienda{
+        width: 100%;
+        height: 6000px;
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        background-image: linear-gradient(to bottom, white, pink);
+    }
+    .titulo {
+        text-align: center;
+        margin-top: 10%;
+    }
+    .card{
+        width:200px;
+        margin-top:10%;
+        margin-left: 105px;
+    }
+    #tarjetas{
+        height:500px;
+        width:100%;
+
+    }
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+@media only screen and (min-width:480px){
+
+    .mainTienda{
+        width: 100%;
+        height: 6000px;
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        background-image: linear-gradient(to bottom, white, pink);
+    }
+    .titulo {
+        text-align: center;
+        margin-top: 10%;
+    }
+    .card{
+        width:200px;
+        margin-top:10%;
+        margin-left: 150px;
+    }
+    #tarjetas{
+        height:500px;
+        width:350px;
+    }
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+@media only screen and (min-width:768px){
+
+    .mainTienda{
+        width: 100%;
+        height: 6000px;
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        background-image: linear-gradient(to bottom, white, pink);
+    }
+    .titulo {
+        text-align: center;
+        margin-top: 10%;
+    }
+    .card{
+        width:300px;
+        margin-top:10%;
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    #tarjetas{
+
+        width:350px;
+    }
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+@media only screen and (min-width:1200px){
+    .mainTienda{
+        width: 100%;
+        height: 6000px;
+        font-family: 'Quicksand', sans-serif;
+        padding-top: 20px;
+        background-image: linear-gradient(to bottom, white, pink);
+    }
+    .titulo {
+        text-align: center;
+        margin-top: 10%;
+    }
+    .card{
+        width:300px;
+        margin-top:10%;
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    #tarjetas{
+
+        width:350px;
+    }
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+       
+    }
+}
+
+/*MEDIAQUERIES RECETAS*/
+@media only screen and (max-width:480px){
+    .mainRecetas{
+            width: 100%;
+            height: 4500px;
+            background-color: rgb(229, 138, 203);
+            font-family: 'Quicksand', sans-serif;
+            padding-top: 20px;
+            background-image: linear-gradient(to bottom, white, pink);
+    }
+    #carouselExampleCaptions.carousel.slide{
+        height: 269px;
+        margin-top:10%;
+        margin-left:5%;
+        margin-right: 5%;
+        box-shadow: 0 0 20px black;
+        border-radius: 20px;
+    }
+    #carouselExampleCaptions.carousel.slide img{
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .recetas h1{
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom:10%;
+        
+    }
+    .recetas h2{
+        margin-bottom:10%;
+        margin-top: 10%;
+    }
+.table-responsive-sm{
+    height: 450px;
+    width: 100%;
+}
+.pasos{
+    width: 400px;
+}
+.pasos ol{
+    
+    width: 100%;
+    list-style: none;
+    padding-top:20px;
+}
+.advertencia{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 150px;
+    width: 400px;
+    margin-left: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 5px;
+}
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .redes img{
+        width: 50px;
+    }
+}
+@media only screen and (min-width:480px){
+    .mainRecetas{
+            width: 100%;
+            height: 4500px;
+            background-color: rgb(229, 138, 203);
+            font-family: 'Quicksand', sans-serif;
+            padding-top: 20px;
+            background-image: linear-gradient(to bottom, white, pink);
+    }
+    #carouselExampleCaptions.carousel.slide{
+        height: 430px;
+        margin-top:10%;
+        margin-left:5%;
+        margin-right: 5%;
+        box-shadow: 0 0 20px black;
+        border-radius: 20px;
+    }
+    #carouselExampleCaptions.carousel.slide img{
+        border-radius: 20px;
+    }
+
+    .recetas h1{
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom:10%;
+        
+    }
+    .recetas h2{
+        margin-bottom:10%;
+        margin-top: 10%;
+    }
+.table-responsive-sm{
+    height: 450px;
+    width: 100%;
+}
+.pasos{
+    width: 400px;
+}
+.pasos ol{
+    width: 100%;
+    list-style: none;
+    padding-top:20px;
+}
+.advertencia{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 150px;
+    width: 500px;
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+@media only screen and (min-width:768px){
+    .mainRecetas{
+            width: 100%;
+            height: 4500px;
+            background-color: rgb(229, 138, 203);
+            font-family: 'Quicksand', sans-serif;
+            padding-top: 20px;
+            background-image: linear-gradient(to bottom, white, pink);
+    }
+    #carouselExampleCaptions.carousel.slide{
+        height: 665px;
+        margin-top:10%;
+        margin-left:5%;
+        margin-right: 5%;
+        box-shadow: 0 0 20px black;
+        border-radius: 20px;
+    }
+    #carouselExampleCaptions.carousel.slide img{
+        border-radius: 20px;
+    }
+
+    .recetas h1{
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom:10%;
+        
+    }
+    .recetas h2{
+        margin-bottom:10%;
+        margin-top: 10%;
+    }
+.table-responsive-sm{
+    height: 330px;
+    width: 100%;
+    background-color: white;
+}
+.pasos{
+    width: 100%;
+    margin-top: 10%;
+    
+}
+.pasos ol{
+    list-style: none;
+    padding-top:20px;
+}
+.advertencia{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 150px;
+    width: 600px;
+    margin-left: 250px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media only screen and (min-width:1200px){
+    .mainRecetas{
+            width: 100%;
+            height: 4500px;
+            background-color: rgb(229, 138, 203);
+            font-family: 'Quicksand', sans-serif;
+            padding-top: 20px;
+            background-image: linear-gradient(to bottom, white, pink);
+    }
+    #carouselExampleCaptions.carousel.slide{
+        height: 665px;
+        margin-top:10%;
+        margin-left:5%;
+        margin-right: 5%;
+        box-shadow: 0 0 20px black;
+        border-radius: 20px;
+    }
+    #carouselExampleCaptions.carousel.slide img{
+        border-radius: 20px;
+    }
+
+    .recetas h1{
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom:10%;
+        
+    }
+    .recetas h2{
+        margin-bottom:10%;
+        margin-top: 10%;
+    }
+.table-responsive-sm{
+    height: 330px;
+    width: 100%;
+    background-color: white;
+}
+.pasos{
+    width: 100%;
+    margin-top: 10%;
+    
+}
+.pasos ol{
+    list-style: none;
+    padding-top:20px;
+}
+.advertencia{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 150px;
+    width: 600px;
+    margin-left: 550px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+    footer{
+        text-align: center;
+        background-color:pink;
+        width: 100%;
+        height: 150px;
+        
+    }
+
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right:5px;
+        margin-right:10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+

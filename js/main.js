@@ -1,11 +1,11 @@
-const notaDeEntrega = [2 , 4 , 6, 8, 10];
+const productosSeleccionados = [2 , 3 , 4, 5, 6];
 
-for (let i = 0; i < 6; i++){
-    if (notaDeEntrega[i] < 7){
-        console.log(`Tu nota es ${notaDeEntrega[i]} Desaprobaste!`);
-        document.write(`Tu nota es ${notaDeEntrega[i]} Desaprobaste!`);
+for (let i = 0; i < 1; i++){
+    if (productosSeleccionados[i] > 1 ){
+        console.log(`Tienes ${productosSeleccionados[i]} productos en el carrito!`);
+        document.write(`Tienes ${productosSeleccionados[i]} productos en el carrito`);
         } else{
-            console.log(`Tu nota es ${notaDeEntrega[i]} Aprobaste!`);
-            document.write(`Tu nota es ${notaDeEntrega[i]} Aprobaste!`);
+            console.log(`No tienes productos en el carrito ${productosSeleccionados[i]}`);
+            document.write(`No tienes productos en el carrito ${productosSeleccionados[i]}`);
         }
 }

@@ -29,3 +29,19 @@ for (const producto of cursos){
     console.log(producto.id);
     console.log(producto.producto);
 }
+
+let logueado = document.getElementsByClassName("form-check-label")
+console.log(logueado.innerText)
+
+logueado.innerText = "Aceptaste los terminos y condiciones!"
+console.log(logueado.innerText)
+
+let formulario = document.getElementsByClassName("row needs-validation");
+formulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e){
+    e.preventDefault();
+    console.log("Logueaste con exito!")
+}
+
+

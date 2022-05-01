@@ -1,0 +1,778 @@
+@import "variables.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//********** HEADER **********//
+header{
+    position: relative;
+    z-index: 10000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 480px;
+    #logotipo{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        text-align: center;
+        width:100%;
+        height:100%;
+        padding-top:5rem;
+        background-color: $bgcolor;
+        .parrafo1{
+            font-family: $font2;
+            color: $colorg;
+            letter-spacing: .01em;
+            font-size:15px;
+        }
+        .parrafo2{
+            font-family: $font2;
+            color: $colorg;
+            padding-top:10px;
+        }
+        h1{
+            color:white;
+            font-family: $font6;
+            font-size:70px;
+        }
+    }
+    nav{
+        padding-top:10px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        background-color: $bgcolor;
+        z-index: 10;
+        .lista {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width:40%;
+            li {
+                width: 100%;
+                margin-top: 10px;
+            a {
+                color:white;
+                text-decoration: none;
+                font-family: $font7;
+                font-size: 18px;
+            }
+            a:hover{
+                color:rgba(65, 18, 0, 0.815);
+            }
+            }
+        }
+        .container-fluid{
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            a{
+                font-size: 30px;
+                text-align: center;
+                color:white;
+                font-family: $font3;
+                &:hover{
+                    color:rgba(65, 18, 0, 0.815);
+                }
+            }
+        }
+        .lista2{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width:40%;
+        padding-right:30px;
+            li {
+                width: 100%;
+                margin-top: 10px;
+            a {
+                color:white;
+                text-decoration: none;
+                font-family: $font7;
+                font-size: 18px;
+            }
+            a:hover{
+                color:rgba(65, 18, 0, 0.815);
+            }
+            }
+        }
+    }
+}
+.headerHome{
+    background-image: url(/img/bgcoffee.jpg);
+}
+.headerIngresar{
+    background-image: url(../img/bgingresar.jpg);
+}
+.headerCursos{
+    background-image: url(../img/bgcafe.jpg);
+}
+.headerRecetas{
+    background-image: url(../img/bgcafe1.jpg);
+}
+.headerTienda{
+    background-image: url(../img/bglocal.png);
+}
+@media only screen and (max-width:576px){
+header{
+    nav{
+        height: 20%;
+        .lista{
+            flex-direction:column;
+        }
+        .lista2{
+            flex-direction: column;
+        }
+    }
+}
+}
+@media only screen and (min-width:576px){
+    header{
+        nav{
+            height: 20%;
+            .lista{
+                flex-direction:column;
+            }
+            .lista2{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:992px){
+    header{
+        nav{
+            height: 15%;
+            padding-top:20px;
+            .lista{
+                flex-direction:row;
+            }
+            .lista2{
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+
+//********** FOOTER **********//
+
+footer{
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.938);
+    width: 100%;
+    height:270px;
+    p{
+        color: $colorg;
+        font-family:$font2;
+        padding-top:1%;
+    }
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding-right: 2rem;
+        img:hover{
+            box-shadow: 0 0 20px rgba(65, 18, 0, 0.815);
+            border-radius: 40px;
+        }
+    }
+}
+
+//********** HOME **********//
+.home{
+    background-color: white;
+    width:100%;
+    .pt-7{
+        padding-top:5%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        div{ 
+            text-align: center;
+            hr{
+                color: rgba(65, 18, 0, 0.815);;
+                height: 3px;
+                width:10%;
+                margin-left: 45%;
+            }
+            .fs-lg{
+                font-family: $font4;
+                color:black;
+                font-size: 40px;
+            }
+            .mb-2{
+                font-family: $font4;
+            }
+            .mb-0{
+                font-family: $font1;
+                font-size: 20px;
+            }
+        }
+    }
+    #galeria{
+        margin-top:5%;
+        padding-bottom:5%;
+        width:100%;
+        z-index: 1;
+        background-color: rgba(65, 18, 0, 0.815);
+        .col-12{
+            hr{
+                color: black;
+                height:3px;
+                width:10%;
+                margin-left:45%;
+            }
+            .mb-2{
+                font-family:$font2;
+                color:black;
+                font-size:35px;
+                margin-top:5%;
+            }
+            .mb-6{
+                font-family: $font1;
+                color:black;
+            }
+        }
+        #imagenes{
+            align-items:center;
+            div{
+                display: flex;
+                justify-content:center;
+            }
+            .primeras{
+                display: flex;
+                justify-content: space-around;
+                div{
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+            }
+            #miniaturas{
+                padding-left:5%;
+                padding-top:3%;
+                align-items:center;
+                div{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .img-fluid{
+                box-shadow: 0 0 20px black;
+            }
+            #img3{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #img5{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+.horarios{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width:100%;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.363);
+    hr{
+        color:rgba(65, 18, 0, 0.815);
+        height:3px;
+        width:10%;
+        margin-left:45%;
+        margin-top:5%;
+    }
+    #background-video {
+        margin-top:5%;
+        object-fit: cover;
+        box-shadow: 0 0 20px black;
+    }
+    h4{
+        margin-top: 5%;
+        font-family: $font2;
+        font-size:30px;
+        margin-bottom:8%;
+        z-index: 1;
+        color: black;
+    }
+    p{
+        font-family: $font9;
+        font-size:20px;
+        z-index: 1;
+    }
+    .number:hover{
+        color:rgba(65, 18, 0, 0.815);
+        font-size: 22px;
+    }
+    iframe{
+        
+        margin-bottom:20px;
+        box-shadow: 0 0 20px black;
+    }
+}
+}
+
+//********** MEDIAQUERIES HOME **********//
+@media only screen and (max-width:576px){
+    #galeria{
+        .mb-6{
+            font-size:20px;
+        }
+        div.row-justify-content-center{
+            height:250px;
+        }
+        #imagenes{
+            height:80%;
+        }
+    }    
+        #background-video{
+            width: 90vw;
+            height: 40vh;
+        }
+        iframe{
+            width:90vw;
+            height:50vh;
+        }
+    }
+@media only screen and (min-width:576px){
+#galeria{
+    
+    #imagenes{
+        height:88%;
+    }
+
+}
+    #background-video{
+        width:95vw;
+        height:70vh;
+    }
+    iframe{
+        
+        width:90vw;
+        height:40vh;
+    }
+}
+
+@media only screen and (min-width:768px){
+    #inicio{
+        border:3px solid white;
+    }
+    #background-video{
+        width:95vw;
+        height:70vh;
+    }
+    iframe{ 
+        width:90vw;
+        height:40vh;
+    }
+}
+
+@media only screen and (min-width:992px){
+    #galeria{
+        .mb-6{
+            font-size:25px;
+        }
+    }
+    #img1 a img{
+        height:630px;
+        margin-left:5%;
+    }
+    #background-video{
+        width:95vw;
+        height:70vh;
+        margin-left:2%;
+    }
+}
+
+//********** CURSOS **********//
+.mainCursos{
+    width: 100%;
+    background-color:white;
+    #introCursos{
+        text-align: center;
+        .col-md-2{
+            padding-top:5%;
+        }
+        .container-fluid{
+            background-color: white;
+        }
+        .hr-sm{
+                color: black;
+                height: 3px;
+                width:40%;
+                margin-left:30%;
+            }
+        .fs-lg{
+            font-family: $font4;
+        }
+        .mb-2{
+            font-family: $font4;
+            font-size: 30px;
+            padding-bottom:5%;
+        }
+        .mb-0{
+            font-family: $font2;
+            padding-bottom:5%;
+        }
+        div .media-decoration-img{
+            box-shadow: 0 0 20px black;
+        }
+        }
+    #cursosComprar{
+        background-color:rgba(65, 18, 0, 0.815);
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-right: 0;
+        margin-left: 0;
+        .row{
+            width:100%;
+            height:100%;
+            align-content: space-around;
+    .card{
+        box-shadow: 0 0 20px black;
+        &:hover{
+            box-shadow: 0 0 20px rgba(65, 18, 0, 0.815);
+        }
+        height:550px;
+        img{
+            height:350px;
+        }
+        a:hover{
+            color:rgba(65, 18, 0, 0.815);
+        }
+        }
+    .col-lg-4{
+        display: flex;
+        justify-content:center;
+        padding-top:2%;
+        padding-bottom:2%;
+    }
+}
+    }
+}
+
+//********** MEDIAQUERIES CURSOS **********//
+@media only screen and (max-width:576px){
+    #tarjetas{
+        height:3500px;
+    }
+    #introCursos{
+    .fs-lg{
+        font-size:45px;
+    }
+    .col-lg-4{
+        padding-left:25%;
+    }
+    }
+}
+@media only screen and (min-width:576px){
+    #tarjetas{
+        height:3500px;
+    }
+}
+@media only screen and (min-width:768px){
+    #introCursos{
+    .fs-lg{
+        display: none;
+    }
+    .col-md-4{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    }
+    #tarjetas{
+        height:1800px;
+    }
+}
+@media only screen and (min-width:992px){
+    #introCursos{
+        .col-md-4{
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        }
+}
+
+@media only screen and (min-width:1200px){
+    #introCursos{
+        .fs-lg{
+            display: block;
+            font-size: 45px;
+        }
+}
+    #cursosComprar{
+        height:1500px;
+    }
+}
+//********** INGRESAR *********//
+.log{
+    background-image: url(../img/fondobg.jpg);
+    background-color: rgba(8, 8, 8, 0.432);
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Quicksand', sans-serif;
+    width:100%;
+    height: 800px;
+    #form{
+        padding-top:30px;
+    }
+    .row{
+        color:white;
+        font-family: $font2;
+        font-size:19px;
+        margin-top:5%;
+        display: flex;
+        align-content: space-between;
+    }
+}
+
+//********** MEDIAQUERIES INGRESAR **********//
+@media only screen and (max-width:576px){
+    .log{
+        .row{
+            text-align: center;
+            justify-content:center;
+        }
+    }
+}
+@media only screen and (min-width:576px){
+    .log{
+        .row{
+            text-align: center;
+            justify-content:center;
+        }
+    }
+}
+@media only screen and (min-width:768px){
+    .log{
+        height:900px;
+    }
+}
+@media only screen and (min-width:992px){
+    .log{
+        height: 920px;
+    .row{
+        text-align: center;
+        justify-content:space-evenly;
+    }
+}
+}
+@media only screen and (min-width:1200px){
+    .log{
+        height:1000px;
+    }
+}
+
+//********** TIENDA **********//
+.mainTienda{
+    padding-top: 10%;
+    background-color: white;
+    .row{
+        .mb-2{
+            font-family:$font4;
+            color:black;
+        }
+        .mb-6{
+            color:rgb(128, 128, 128);
+        }
+        .col{
+            .nav{
+                font-family: $font2;
+                a{
+                    color:rgba(65, 18, 0, 0.815);
+                    box-shadow: 0 0 2px black;
+                    border-radius: 50px;
+                    &:hover{
+                        color:black;
+                        box-shadow: 0 0 2px rgba(65, 18, 0, 0.815);
+                    }
+                }
+            }
+        }
+        .col-3{
+            .ratio{
+                img{
+                    box-shadow: 0 0 5px black;
+                }
+            }
+        }
+        .col-2{
+            .fs-4{
+                font-family: $font8;
+            }
+        }
+    }
+    .takeaway{
+        margin:0;
+        padding-top: 5%;
+        padding-bottom:5%;
+        background-color: rgba(65, 18, 0, 0.815);
+        div{
+            padding: 0;
+        }
+    }
+}
+
+//********** RECETAS **********//
+
+.mainRecetas{
+    width: 100%;
+    background-color:white;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 20px;
+    .recetas{
+        .row{
+            .col-md-2{
+                padding-top:5%;
+            }
+            .hr-sm{
+                    color: rgb(65, 18, 0);
+                    height: 3px;
+                    width:10%;
+                    margin-left: 45%;
+                }
+            .fs-lg{
+                text-align:center;
+                font-family: $font4;
+                color:black;
+                font-size: 40px;
+            }
+            .media-decoration-img{
+                box-shadow: 0 0 20px black;
+            }
+            .mb-2{
+                text-align:center;
+                font-family: $font4;
+            }
+            .mb-0{
+                text-align:center;
+                font-family: $font1;
+                font-size:20px;
+                padding-bottom:5%;
+            }
+        }
+        #masaMadre{
+            padding-left: 0;
+            padding-right: 0;
+            .introMasaMadre{
+            background-color: rgba(65, 18, 0, 0.74);
+            width:100%;
+                .tituloMasaMadre{
+                    font-family: $font2;
+                    text-align: center;
+                    font-size: 35px;
+                    padding-top:5%;
+                    padding-bottom:5%;
+                    color: white;
+                }
+                .descripcionMasaMadre{
+                    font-size: 20px;
+                    color: white;
+                    text-align: center;
+                    padding-bottom: 5%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    margin-bottom:0;
+                }
+            }
+            .img-fluid{
+                margin-top: 5%;
+                margin-bottom: 5%;
+                box-shadow: 0 0 20px black;
+            }
+            .ingredientes{
+                background-color: rgba(128, 128, 128, 0.363);
+                padding-top:5%;
+                padding-bottom: 5%;
+                color: black;
+                text-align: center;
+                h2{
+                    font-family: $font2;
+                    font-size:35px;
+                }
+            }
+            .pasos{
+                margin:0;
+                text-align: center;
+                .prepasos{
+                    margin:0;
+                    padding-bottom: 5%;
+                    font-family: $font2;
+                }
+                h2{
+                    background-color: rgba(65, 18, 0, 0.815);
+                    font-family:$font4;
+                    padding-bottom: 5%;
+                    padding-top: 5%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    margin:0;
+                    &:hover{
+                        color:white;
+                    }
+                }
+                ul{
+                    margin:0;
+                    padding-top: 5%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    padding-bottom: 5%;
+                    background-color: rgba(128, 128, 128, 0.363);
+                    li{
+                        text-align: start;
+                        font-size:19px;
+                        color:black;
+                    }
+                }
+                h4{
+                    background-color: rgba(128, 128, 128, 0.363);
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+                    margin: 0;
+                    font-family: $font2;
+                }
+            }
+        }
+    }
+}
+
+
+//********** MEDIAQUERIES RECETAS **********//
+
+@media only screen and (min-width:768px){
+    .recetas{
+        .row{
+            .hr-sm{
+                    display: none;
+                }
+            .fs-lg{
+                display: none;
+            }
+            .media-decoration-img{
+                margin-bottom:5%;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1200px){
+    .recetas{
+        .row{
+            .hr-sm{
+                display: block;
+            }
+            .fs-lg{
+                display: block;
+            }
+        }
+        #imagen{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

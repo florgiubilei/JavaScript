@@ -16,7 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aladin&family=Allerta+Stencil&family=Berkshire+Swash&family=Beth+Ellen&family=Condiment&family=Damion&family=Merriweather:ital,wght@1,700&family=Pattaya&family=Playfair+Display:ital,wght@0,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="../js/main.js"></script>
     <link rel="icon" type="image.png" href="../img/favicon.jpg">
     <title>Mz Bakery - Tienda</title>
 </head>
@@ -51,6 +50,11 @@
         </div>
     </header>
     <main class="mainTienda">
+        <!--Buscador-->
+        <input type="text" id="producto-buscado">
+        <button class="btn-primary me-5" id="boton-buscar" onclick="buscarProducto()">
+            <i class="bi bi-search"></i>
+        </button>
         <section class="py-7 py-md-9 border-bottom">
             <div class="container">
                 <div class="row justify-content-center">
@@ -90,661 +94,60 @@
                         <div class="tab-content" id="menuContent">
                             <div class="tab-pane fade active show" id="principales" role="tabpanel"
                                 aria-labelledby="principalesTab">
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Plato principal 1</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito plato principal elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                    <script>
-                                                        let boton =
-                                                        document.getElementById("agregar")
-                                                        boton.addEventListener("click", respuestaClick)
-                                                        function respuestaClick(){
-                                                            prompt ("Agregado al carrito");
-                                                            console.log("Agregado al carrito");
-                                                        }
-                                                    </script>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato1.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Plato principal 2</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito plato principal elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">$23
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato2.jpg"
-                                                            alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Plato principal 3</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0"> Exquisito plato principal elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $16
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato3.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Plato principal 4</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito plato principal elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato4.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Plato principal 5</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito plato principal elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $23
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato6.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Plato principal 6</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito plato principal elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $16
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div id="grupo-de-cards" class="row">
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="brunch" role="tabpanel" aria-labelledby="brunchTab">
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato7.jph.JPG" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Brunch 1</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito brunch elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $23
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato9.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Brunch 2</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito brunch elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato10.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Brunch 3</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito brunch elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato12.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Brunch 4</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito brunch elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $16
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato18.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Brunch 5</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito brunch elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $16
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato13.jpg" alt="...">
-                                                    </div>
-                                                    </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Brunch 6</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito brunch elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $23
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="cena" role="tabpanel" aria-labelledby="cenaTab">
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato5.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Cena gourmet</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisita cena gourmet elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $16
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato19.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Cena gourmet 2</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisita cena gourmet elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato20.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Cena gourmet 3</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisita cena gourmet elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato16.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Cena gourmet 4</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisita cena gourmet elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $23
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato14.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Cena gourmet 5</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisita cena gourmet elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $23
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/plato11.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Cena gourmet 6</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisita cena gourmet elaborado por nuestro
-                                                        chef.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $16
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="bebidas" role="tabpanel" aria-labelledby="bebidasTab">
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/bebida.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Tragos</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisitos tragos elaborados por nuestro
-                                                        bartender.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/bebida1.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Tragos 2</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisitos tragos elaborados por nuestro
-                                                        bartender.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $10
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/bebida2.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Tragos 3</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisitos tragos elaborados por nuestro
-                                                        bartender.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/bebida3.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Tragos 4</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisitos tragos elaborados por nuestro
-                                                        bartender.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $15
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/bebida4.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Limonada</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisita limonada elaborada por nuestro
-                                                        bartender.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $5
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="py-3 border-bottom">
-                                            <div class="row">
-                                                <div class="col-3 align-self-center">
-                                                    <!-- Image -->
-                                                    <div class="ratio ratio-1x1">
-                                                        <img class="object-fit-cover" src="../img/bebida5.jpg" alt="...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <!-- Heading -->
-                                                    <h5 class="mb-2">Ice coffee</h5>
-                                                    <!-- Text -->
-                                                    <p class="mb-0">Exquisito cafe helado elaborado por la casa.</p>
-                                                </div>
-                                                <div class="col-2">
-                                                    <!-- Price -->
-                                                    <div class="fs-4 font-serif text-center text-black">
-                                                        $10
-                                                    </div>
-                                                    <button id="agregar" class="btn btn-dark" type="submit">Agregar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            </div>
             </div>
         </section>
         <section class="takeaway">
             <div class="container-fluid">
                 <img class="img-fluid" src="../img/takeaway.jpg" alt="">
+            </div>
+        </section>
+        <section class="pt-5 pb-5 min-vh-100">
+            <div class="container">
+                <div class="row w-100">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <h3 class="display-5 mb-2 text-center fw-bold">Productos en tu carrito</h3>
+                        <p class="mb-5 text-center h5">
+                            Actualmente tienes los siguientes productos cargados en tu carrito
+                        </p>
+                        <table id="shoppingCart" class="table table-condensed table-responsive">
+                            <thead>
+                                <tr>
+                                    <th style="width:60%">Producto</th>
+                                    <th style="width:12%">Precio</th>
+                                    <th style="width:10%">Cantidad</th>
+                                </tr>
+                            </thead>
+    
+                            <tbody id="items-carrito">
+    
+                                <!-- Comienzo descripción producto -->
+                                <!-- Fin descripción producto -->
+    
+                            </tbody>
+                        </table>
+    
+                        <div class="float-end text-end">
+                            <h4>Subtotal: <span id="subtotal-carrito">0</span> </h4>
+                            <h6>Cotización USD de referencia: <span id="dolar-blue">0</span> </h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-4 d-flex align-items-center">
+                    <div class="col-sm-6 order-md-2 text-end">
+                        <a href="#" class="btn btn-dark mb-4 btn-lg pl-5 pr-5">Finalizar compra</a>
+                    </div>
+    
+                    <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+                        <a href="../html/tienda.html" class="btn btn-dark mb-4 btn-lg pl-5 pr-5"><i
+                                class="bi bi-arrow-left"></i> Seguir comprando</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -777,6 +180,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/generadorCards.js"></script>
+    <script src="../js/catalogo.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/logicaCarrito.js"></script>
+    <script src="../js/paginaCarrito.js"></script>
+
 </body>
 
 </html>

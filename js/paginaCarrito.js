@@ -30,15 +30,15 @@ function itemsGeneradas(itemsAMostrar) {
                 <div class="text-right">
 
                     <button onclick="agregarAlCarrito(${producto.id}) ; actualizarCantidad(${producto.id})" class="btn btn-dark border-primary bg-white btn-md mb-2">
-                        <i class="bi bi-plus h3"></i>
+                        <i class="bi bi-plus h3">Agregar</i>
                     </button>
 
                     <button onclick="reducirCarrito(${producto.id}) ; actualizarCantidad(${producto.id})" class="btn btn-dark border-secondary bg-white btn-md mb-2">
-                        <i class="bi bi-dash h3"></i>
+                        <i class="bi bi-dash h3">Restar</i>
                     </button>
 
                     <button onclick="quitarCarrito(${producto.id}) ; actualizarCantidad(${producto.id})" class="btn btn-dark border-secondary bg-white btn-md mb-2">
-                        <i class="bi bi-trash h3"></i>
+                        <i class="bi bi-trash h3">Eliminar</i>
                     </button>
 
                 </div>

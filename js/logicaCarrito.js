@@ -38,24 +38,27 @@ function agregarAlCarrito(idProducto) {
         productoParaAgregar.cantidadEnCarrito++;
         productoEnCarrito == undefined && carrito.push(productoParaAgregar);
         localStorage.setItem("carrito", JSON.stringify(carrito)); // Actualizo el carrito en storage
-
-        swal({
-            title: `Agregaste ${productoEnCatalogo.nombre} a tu carrito`,
-            text: "Ya casi es tuyo!",
-            icon: "success",
-            button: "Continuar comprando!",
-        });
-    } else {
-        // Sweet alert anunciando el producto que se acaba de agregar al carrito
-        swal({
-            title: `No hay stock del producto ${productoEnCatalogo.nombre}`,
-            text: "Lo sentimos!",
-            icon: "error",
-            button: "Continuar comprando!",
-        });
     }
-}
+    Toastify({
+        text: "Agregaste un producto a tu carrito",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
 
+    setTimeout(function(){
+        location.reload();
+    }, 3000);
+    
+}
 function reducirCarrito(idProducto) {
     const productoARemover = carrito.find(producto => producto.id == idProducto);
 
@@ -64,7 +67,7 @@ function reducirCarrito(idProducto) {
         productoARemover.cantidadEnCarrito--;
         productoARemover.cantidadEnCarrito == 0 && carrito.splice(carrito.indexOf(productoARemover), 1)
         localStorage.setItem("carrito", JSON.stringify(carrito)); // Actualizo el carrito en storage
-        actualizarItemsCarrito(carrito);
+        
     }
 }
 
@@ -74,5 +77,19 @@ function quitarCarrito(idProducto) {
     productoARemover.cantidadEnCarrito = 0;
     carrito.splice(carrito.indexOf(productoARemover), 1)
     localStorage.setItem("carrito", JSON.stringify(carrito)); // Actualizo el carrito en storage
-    actualizarItemsCarrito(carrito);
+    
+    Toastify({
+        text: "Eliminaste el producto de tu carrito",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+        background: "linear-gradient(to right, #000000, #ff0000)",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
 }
